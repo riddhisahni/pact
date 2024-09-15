@@ -76,13 +76,15 @@
     }
     
     .take-photo-button {
+        margin-top: 20px;
         font-size: 16px;
         padding: 10px 240px;
         border: none;
-        border-radius: 5px;
+        border-radius: 50px;
         background-color: #7F9A93;
         color: #fff;
         cursor: pointer;
+        
     }
     
     .take-photo-button:hover {

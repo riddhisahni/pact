@@ -8,6 +8,8 @@ import Check from "./pages/Check.tsx"
 import Login from "./pages/Login.tsx"
 import Home from "./pages/Home.tsx"
 import JoinGroup from "./pages/JoinGroup.tsx";
+import CreateGroup from "./CreateGroup.tsx";
+
 
 
 export default function App() {
@@ -18,6 +20,7 @@ export default function App() {
         <Route path="/Home" element= {<Home />} />
         <Route path="/check" element={<Check />} />
         <Route path="/login" element= {<Login />} />
+        <Route path="/createGroup" element= {<CreateGroup />} />
         {/* <Route path="/newgroup" element={<NewGroup />} /> */}
       </Routes>
     </BrowserRouter>

@@ -1,15 +1,42 @@
 h1 {
     color: #7F9A93;
-}
-
-h2 {
-    color: #7F9A93;
-}
-
-body {
-    background-color: #FFFDF4; /* Change this color to whatever you like */
-    /* margin: 0; /* Optional: remove default margin */
-    /* padding: 0; /* Optional: remove default padding */
-    /* font-family: Arial, sans-serif; Optional: set a default font */ 
+    margin-right: 20px;
   }
   
+  h2 {
+    color: #7F9A93;
+    margin-right: 20px;
+  }
+  
+  body {
+    margin-top: 40px;
+    margin-right: 20px;
+    background-color: #FFFDF4;
+  }
+  
+  .create-body {
+    margin-top: 40px;
+    margin-right: 20px;
+  }
+  
+  .save-button {
+    background-color: #7F9A93;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-button:hover {
+    background-color: #6b827a;
+  }
+  
+  .save-button:active {
+    background-color: #566960;
+  }

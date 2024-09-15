@@ -1,8 +1,38 @@
-.text {
-    color: #7F9A93;
-}
 
-.h1 {
-    color: #EFBC9B;
-}
 
+.page-container {
+    padding: 20px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .text {
+    font-size: 150px;
+    font-weight: bold;
+    color: #455853;
+  }
+  
+  .h1 {
+    font-size: 50px;
+    margin-bottom: 100px;
+    color: #555;
+  }
+  
+  .custom-signin-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #D6DAC8; /* Primary background color */
+    color: #455853;
+    border: none;
+    border-radius: 50px;
+    width: 294px; /* Set the width of the button */
+    height: 82px; /* Set the height of the button */
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-signin-button:hover {
+    background-color: #C0C4A8; /* Slightly darker on hover */
+  }
+  

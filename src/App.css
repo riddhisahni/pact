@@ -145,3 +145,64 @@ body {
   font-size: 20px;
   font-family: "Montserrat";
 }
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.75); /* Dark overlay */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #FFFBEB; /* Matches background */
+  padding: 40px; /* Spacious padding */
+  border-radius: 25px; /* Rounded corners for consistency */
+  max-width: 400px; /* Control modal width */
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  font-family: "Montserrat";
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around; /* Spread buttons evenly */
+  margin-top: 30px;
+}
+
+.modal-button {
+  padding: 15px 30px; /* Larger button */
+  background-color: #D6DAC8; /* Same as your existing groups color */
+  border-radius: 50px; /* Rounded button */
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-button:hover {
+  background-color: #c0c5a6; /* Darken on hover */
+}
+
+.close-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #FF6B6B; /* Red close button */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #ff4b4b;
+}
