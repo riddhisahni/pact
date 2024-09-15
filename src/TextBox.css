@@ -1,0 +1,20 @@
+/* BigRoundedTextBox.css */
+
+.big-rounded-textbox {
+    width: 100%;             /* Full width of the parent container */
+    padding: 20px;           /* Large padding inside the text box */
+    font-size: 18px;         /* Larger font size for the text */
+    border: 2px solid #7F9A93;  /* Border with a light gray color */
+    border-radius: 20px;     /* Very rounded corners */
+    background-color: #FFFDF4;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    outline: none;           /* Remove default outline on focus */
+    margin-bottom: 20px;     /* Add space below the text box */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+    color: black;
+  }
+  
+  .big-rounded-textbox:focus {
+    border-color: #007BFF;   /* Blue border when focused */
+  }
+  

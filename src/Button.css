@@ -1,0 +1,11 @@
+  /* Optional: Add additional styles for the buttons or other elements */
+  .button {
+    padding: 10px 20px; /* Example padding for buttons */
+    font-size: 16px;    /* Example font size for buttons */
+    background-color: #D6DAC8; /* Primary background color */
+    color: #455853;
+    border-radius: 50px; /* Creates an oval shape */
+    width: 294px;  /* Set the width of the button */
+    height: 82px;  /* Set the height of the button */
+  }
+  

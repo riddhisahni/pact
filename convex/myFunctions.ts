@@ -1,6 +1,6 @@
+// Import necessary Convex values and server tools
 import { v } from "convex/values";
-import { api } from "./_generated/api";
-import { query, mutation, action } from "./_generated/server";
+import { query, mutation } from "./_generated/server";
 
 // Query to get all users for the dropdown
 export const listUsers = query({
@@ -10,16 +10,23 @@ export const listUsers = query({
   },
 });
 
+// Mutation to add a friend
 export const addFriend = mutation({
-  // Define the arguments validation using Convex's built-in validators
   args: {
     name: v.string(),
     clerkID: v.string(),
   },
 
-  // Define the handler with type annotations
-  handler: async (ctx, { name, clerkID }: { name: string; clerkID: string }) => {
-    // Insert the friend data into the "friends" table
-    await ctx.db.insert("friends", { name, clerkID });
+  handler: async (ctx, { name, clerkID }) => {
+    // Check if the friend already exists
+    const existingFriend = await ctx.db
+      .query("friends")
+      .filter((q) => q.eq(q.field("clerkID"), clerkID))
+      .first();
+
+    // If the friend does not exist, add them
+    if (!existingFriend) {
+      await ctx.db.insert("friends", { name, clerkID });
+    }
   },
 });

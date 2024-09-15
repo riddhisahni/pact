@@ -1,0 +1,27 @@
+/* Define spacing class to add margin between elements */
+.spacing {
+    margin-bottom: 40px; /* Adjust this value to control the spacing */
+  }
+  
+  /* Optional: Add additional styles for the buttons or other elements */
+  .button {
+    padding: 10px 20px; /* Example padding for buttons */
+    font-size: 16px;    /* Example font size for buttons */
+    background-color: #D6DAC8; /* Primary background color */
+    color: #455853;
+    border-radius: 50px; /* Creates an oval shape */
+    width: 294px;  /* Set the width of the button */
+    height: 82px;  /* Set the height of the button */
+  }
+  
+/* styles.css or your main CSS file */
+body {
+    background-color: #FFFDF4; /* Change this color to whatever you like */
+    margin: 0; /* Optional: remove default margin */
+    padding: 0; /* Optional: remove default padding */
+    font-family: Arial, sans-serif; /* Optional: set a default font */
+  }
+  
+.text {
+    color: #7F9A93;
+}
